@@ -1,38 +1,46 @@
-📸 SNAPCLASS
+ 📸 SnapClass
 
-An AI-powered Face Recognition Attendance System built with Python and Streamlit.
+An AI-powered Smart Attendance Management System built with Python and Streamlit.
 
-SNAPCLASS automates attendance using Artificial Intelligence, Computer Vision, and Face Recognition. The application captures live video through a webcam, recognizes registered users, and records attendance in real time, making the attendance process faster, smarter, and more efficient.
-
- ✨ Features
-
-- 📸 Real-time face detection
-- 🧠 AI-based face recognition
-- 👤 User registration with facial data
-- ✅ Automatic attendance marking
-- 🕒 Date & time-based attendance records
-- 🌐 Interactive Streamlit interface
-- 📊 Efficient attendance management
+SnapClass is an intelligent attendance management system that automates attendance using Face Recognition and AI-powered identification. It provides separate interfaces for teachers and students, allowing seamless classroom management, student enrollment, and attendance tracking through an interactive web application.
 
 ---
 
- 🛠️ Tech Stack
+ ✨ Features
+
+- 👤 AI-powered face recognition
+- 👨‍🏫 Separate Teacher and Student dashboards
+- 📝 Automatic attendance management
+- 📱 QR code-based classroom joining
+- 🔒 Secure user authentication
+- ☁️ Cloud database integration with Supabase
+- 🌐 Interactive web interface built with Streamlit
+
+---
+
+🛠️ Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
 | 🐍 Python | Core programming language |
 | 🌐 Streamlit | Interactive web application |
-| 👁️ OpenCV | Image processing & face detection |
-| 🤖 face_recognition (dlib) | Face recognition using facial embeddings |
+| 😊 dlib & face_recognition_models | Face recognition using pre-trained models |
+| 📊 Scikit-learn | Face embedding comparison and machine learning utilities |
 | 🔢 NumPy | Numerical computations |
-| 🐼 Pandas | Attendance data handling |
+| 🐼 Pandas | Attendance data management |
+| ☁️ Supabase | Backend database and authentication |
+| 🔒 bcrypt | Password hashing and secure authentication |
+| 🔳 Segno | QR code generation |
+| 🖼️ Pillow | Image processing |
+| 🎤 Librosa | Audio processing |
+| 🗣️ Resemblyzer | Speaker embedding generation |
 
 ---
 
 📂 Project Structure
 
 ```text
-SNAPCLASS/
+SnapClass/
 ├── src/
 │   ├── components/
 │   ├── pipelines/
@@ -47,18 +55,16 @@ SNAPCLASS/
 
 ⚙️ How It Works
 
-1️⃣ Register a user's face.
+1️⃣ Users log in as a **Teacher** or **Student**.
 
-2️⃣ Generate and store face encodings.
+2️⃣ Teachers create and manage classrooms.
 
-3️⃣ Capture live video through the webcam.
+3️⃣ Students join classrooms using a **QR code** or join code.
 
-4️⃣ Detect and recognize faces in real time.
+4️⃣ The system identifies registered users using **AI-powered face recognition**.
 
-5️⃣ Mark attendance automatically.
-
-6️⃣ Save attendance records with the current date and time.
+5️⃣ Attendance is automatically recorded and securely stored in **Supabase**.
 
 ---
 
-⭐ *If you found this project interesting, consider giving it a star on GitHub!*
+⭐ **If you found this project useful, consider giving it a star on GitHub!**
